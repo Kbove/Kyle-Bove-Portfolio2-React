@@ -4,6 +4,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import {FaLinkedin, FaGithub} from 'react-icons/fa'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -30,6 +31,9 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <footer>
+        <h3><a href='https://www.linkedin.com/in/kyle-bove-mba-004a96aa/'><FaLinkedin/></a><a href='https://github.com/Kbove'><FaGithub/></a></h3>
+      </footer>
     </div>
   );
 }

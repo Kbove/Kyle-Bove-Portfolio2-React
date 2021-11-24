@@ -7,7 +7,6 @@ import event from "./images/Work day planner.jfif"
 
 const styles = {
 div: {
-  // display: 'flex',
   padding: "15px, 15px",
   marginTop: "15px",
   backgroundColor: 'gray',
@@ -23,16 +22,13 @@ h1: {
   backgroundColor: 'black'
 },
 
-// h3: {
-//   fontSize: "small"
-// },
-
 content: {
     display:'flex',
     flexWrap: 'wrap',
     padding: '30px 7.5% 30px 30px',
     width: '85vw',
-    backgroundColor: 'grey'
+    backgroundColor: 'grey',
+    borderBottom: '3px solid black'
 },
 
 top: {
@@ -61,6 +57,10 @@ thumbnailImg: {
 },
 
 imageCaption: {
+    // display: 'none',
+    // '& hover': {
+    //     display: 'block',
+    // },
     position:'absolute',
     bottom: '3vw',
     backgroundColor: 'black',
@@ -70,6 +70,7 @@ imageCaption: {
     borderBottom:'3px solid black',
     color: 'red',
     fontSize: 'small',
+
 },
 
 link: {
