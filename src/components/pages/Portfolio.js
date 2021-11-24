@@ -1,4 +1,9 @@
 import React from 'react';
+import chess from "./images/Let's Play Chess.png"
+import readmeGen from "./images/markdown-logo.jpg"
+import covid from "./images/Covid Data Tracker.png"
+import weather from "./images/Weather API.jfif"
+import event from "./images/Work day planner.jfif"
 
 const styles = {
 div: {
@@ -18,13 +23,8 @@ h1: {
   backgroundColor: 'black'
 },
 
-// subheader: {
-//     color: 'red',
-//     minWidth: '15%',
-//     padding: '20px',
-//     textAlign: 'center',
-//     fontSize: '20px',
-//     backgroundColor: 'black',
+// h3: {
+//   fontSize: "small"
 // },
 
 content: {
@@ -69,9 +69,7 @@ imageCaption: {
     borderRight:'3px solid black',
     borderBottom:'3px solid black',
     color: 'red',
-      'p':{
     fontSize: 'small',
-  },
 },
 
 link: {
@@ -91,41 +89,41 @@ export default function About() {
             <h2 style={styles.h1} class="subheader">My Projects</h2>
             <div style={styles.content} class="content">
                 <div style={styles.thumbnail} class="thumbnail" id="top">
-                    <a style={styles.thumbnailImg} href="https://github.com/ChuckDvchek/chess-project-2" class="link"></a>
-                    <img src="./images/Lets Play Chess.png" alt="lesson scheduler"></img>
+                    <a style={styles.link} href="https://github.com/ChuckDvchek/chess-project-2" class="link"></a>
+                    <img style={styles.thumbnailImg} src={chess} alt="Chess application"></img>
                     <div style={styles.imageCaption} class="image-caption">
-                        <h3>Let's Play Chess</h3>
+                        <h3 style={styles.h3} >Let's Play Chess</h3>
                         <p>A multiplayer online chess application that I and a couple of my peers developed</p>
                     </div>
                 </div>
-                <div class="thumbnail">
-                    <a href="https://github.com/Kbove/hw7-Kyle-Bove" class="link"></a>
-                    <img src="assets/markdown-logo.jpg"></img>
-                    <div class="image-caption">
+                <div style={styles.thumbnail} class="thumbnail">
+                    <a style={styles.link} href="https://github.com/Kbove/hw7-Kyle-Bove" class="link"></a>
+                    <img style={styles.thumbnailImg} src={readmeGen}></img>
+                    <div style={styles.imageCaption} class="image-caption">
                         <h3>README Generator</h3>
                         <p>Helps the user to generate pre-formatted readme's by taking in user input via command line</p>
                     </div>
                 </div>
-                <div class="thumbnail">
-                    <a href="https://kbove.github.io/Bootcamp-Project-1/" class="link"></a>
-                    <img src="Assets/Covid Data Tracker.png"></img>
-                    <div class="image-caption">
+                <div style={styles.thumbnail} class="thumbnail">
+                    <a style={styles.link} href="https://kbove.github.io/Bootcamp-Project-1/" class="link"></a>
+                    <img style={styles.thumbnailImg} src={covid}></img>
+                    <div style={styles.imageCaption} class="image-caption">
                         <h3>COVID-19 Data Tracker</h3>
                         <p>Quick and easy to use dashboard to display case and vaccine data across countries</p>
                     </div>
                 </div>
-                <div class="thumbnail">
-                    <a href="https://kbove.github.io/Kyle-Bove-HW-6-Weather-API/" class="link"></a>
-                    <img src="Assets/Weather API.jfif"></img>
-                    <div class="image-caption">
+                <div style={styles.thumbnail} class="thumbnail">
+                    <a style={styles.link} href="https://kbove.github.io/Kyle-Bove-HW-6-Weather-API/" class="link"></a>
+                    <img style={styles.thumbnailImg} src={weather}></img>
+                    <div style={styles.imageCaption} class="image-caption">
                         <h3>Weather API Dashboard</h3>
                         <p>Find weather conditions and 5 day forecast for any city instantly</p>
                     </div>
                 </div>
-                <div class="thumbnail">
-                    <a href="https://kbove.github.io/Kyle-Bove-HW-5-event-planner/" class="link"></a>
-                    <img src="Assets/Work day planner.jfif"></img>
-                    <div class="image-caption">
+                <div style={styles.thumbnail} class="thumbnail">
+                    <a style={styles.link} href="https://kbove.github.io/Kyle-Bove-HW-5-event-planner/" class="link"></a>
+                    <img style={styles.thumbnailImg} src={event}></img>
+                    <div style={styles.imageCaption} class="image-caption">
                         <h3>Event Planner</h3>
                         <p>Simple daily planner to help stay organized</p>
                     </div>

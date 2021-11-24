@@ -1,24 +1,124 @@
-import React from 'react';
+import emailjs from 'emailjs-com';
+import React, { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
 
-export default function Blog() {
+const styles = {
+  div: {
+    backgroundColor: 'gray',
+    color: 'white',
+    borderBottom: '3px solid black'
+  },
+
+  h1: {
+    marginTop: '15px',
+    borderTop: 'black',
+    color: 'red',
+    padding: 20,
+    marginBottom: '-30px',
+    textAlign: 'center',
+    fontSize: 20,
+    backgroundColor: 'black'
+  },
+
+  form: {
+    display: 'flex',
+  },
+
+  name: {
+    display: "grid",
+    margin: '30px',
+    marginRight: '500px'
+  },
+
+  email: {
+    display: 'grid',
+    margin: '30px',
+    marginRight: '500px'
+  },
+
+  message: {
+    display: 'grid',
+    margin: '30px',
+    marginRight: '500px'
+  },
+
+  button: {
+    marginTop: '15px',
+    marginBottom: '15px'
+  },
+}
+
+const form = {
+  name: 'James',
+  notes: 'Check this out!'
+};
+
+emailjs.send('<YOUR SERVICE ID>', '<YOUR TEMPLATE ID>', form, '<YOUR USER ID>')
+  .then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  }, (err) => {
+    console.log('FAILED...', err);
+  });
+
+function Contact() {
+
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'userName') {
+      setUserName(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email) || !userName) {
+      alert('Email or username is invalid');
+      return;
+    }
+
+    setUserName('');
+    setEmail('');
+    alert(`Hello ${userName}`);
+  };
+
   return (
     <div>
-      <h1>Contact Me</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <h1 style={styles.h1} >Contact Me</h1>
+      <form style={styles.div} ref={form} onSubmit={emailjs.send}>
+        <div style={styles.name} >
+          <label>Name</label>
+          <input value={userName}
+            name="userName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="username" />
+        </div>
+        <div style={styles.email} >
+          <label>Email</label>
+          <input value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email" />
+        </div>
+        <div style={styles.message} >
+          <label>Message</label>
+          <textarea name="message" />
+
+          <input style={styles.button} type="submit" value="Send" onClick={handleFormSubmit}/>
+        </div>
+      </form>
     </div>
   );
 }
+
+export default Contact;

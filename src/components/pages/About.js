@@ -17,13 +17,14 @@ const styles = {
     backgroundColor: 'black'
   },
   p: {
-    margin: '15px',
-    color: 'white'
+    color: 'white',
+    padding: '15px',
+    borderBottom: '3px solid black'
   },
 
 }
 
-export default function Home() {
+export default function About() {
   return (
     <div style={styles.div}>
       <h1 style={styles.h1} >About Me</h1>
