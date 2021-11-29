@@ -1,5 +1,5 @@
 # Portfolio 2.0
-    https://github.com/Kbove/Portfolio 2.0
+    https://github.com/Kbove/Portfolio2.0
     
 ## Description
     This is my professional portfolio
