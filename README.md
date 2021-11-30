@@ -1,8 +1,8 @@
 # Portfolio 2.0
-    https://github.com/Kbove/Portfolio2.0
+https://github.com/Kbove/Portfolio2.0
     
 ## Description
-    This is my professional portfolio
+This is my professional portfolio
     
 ## Table of Contents
     
@@ -21,23 +21,23 @@
 * [Questions](#Question)
     
 ## Installation <a id="Installation"></a>
-    The following necessary dependencies must be installed to run the application: Run it in your browser
+The following necessary dependencies must be installed to run the application: Run it in your browser
     
 ## User Story <a id="Usage"></a>
-    Everyone who wants a dev job and anyone who programs should have one
+Everyone who wants a dev job and anyone who programs should have one
 
 ## Link <a id="Link"></a>
-    https://kbove.github.io/Kyle-Bove-Portfolio2-React/
+https://kbove.github.io/Kyle-Bove-Portfolio2-React/
 
 ## Screenshot <a id="Screenshot"></a>
-    ![image](https://user-images.githubusercontent.com/89953218/143170801-a74f32a2-2729-42b3-9b69-4e9e94e38928.png)
+![image](https://user-images.githubusercontent.com/89953218/143170801-a74f32a2-2729-42b3-9b69-4e9e94e38928.png)
     
 ## Contributors <a id="Contributors"></a>
-    Contributors: Me
+Contributors: Me
     
 ## Tests <a id="Tests"></a>
-    Tests: The usual
+Tests: The usual
     
 ## Questions <a id="Question"></a>
-    Frequently Asked Questions: none
+Frequently Asked Questions: none
     
