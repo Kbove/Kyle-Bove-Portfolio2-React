@@ -90,7 +90,7 @@ export default function About() {
             <h2 style={styles.h1} class="subheader">My Projects</h2>
             <div style={styles.content} class="content">
                 <div style={styles.thumbnail} class="thumbnail" id="top">
-                    <a style={styles.link} href="https://github.com/ChuckDvchek/chess-project-2" class="link"></a>
+                    <a style={styles.link} href="https://letsplaychessproj2.herokuapp.com/" class="link"></a>
                     <img style={styles.thumbnailImg} src={chess} alt="Chess application"></img>
                     <div style={styles.imageCaption} class="image-caption">
                         <h3 style={styles.h3} >Let's Play Chess</h3>
@@ -106,7 +106,7 @@ export default function About() {
                     </div>
                 </div>
                 <div style={styles.thumbnail} class="thumbnail">
-                    <a style={styles.link} href="https://kbove.github.io/Bootcamp-Project-1/" class="link"></a>
+                    <a style={styles.link} href="https://kbove.github.io/Covid-Data-Tracker/" class="link"></a>
                     <img style={styles.thumbnailImg} src={covid}></img>
                     <div style={styles.imageCaption} class="image-caption">
                         <h3>COVID-19 Data Tracker</h3>
@@ -114,7 +114,7 @@ export default function About() {
                     </div>
                 </div>
                 <div style={styles.thumbnail} class="thumbnail">
-                    <a style={styles.link} href="https://kbove.github.io/Kyle-Bove-HW-6-Weather-API/" class="link"></a>
+                    <a style={styles.link} href="https://kbove.github.io/Weather-Dashboard/" class="link"></a>
                     <img style={styles.thumbnailImg} src={weather}></img>
                     <div style={styles.imageCaption} class="image-caption">
                         <h3>Weather API Dashboard</h3>
@@ -122,7 +122,7 @@ export default function About() {
                     </div>
                 </div>
                 <div style={styles.thumbnail} class="thumbnail">
-                    <a style={styles.link} href="https://kbove.github.io/Kyle-Bove-HW-5-event-planner/" class="link"></a>
+                    <a style={styles.link} href="https://kbove.github.io/Event-Planner/" class="link"></a>
                     <img style={styles.thumbnailImg} src={event}></img>
                     <div style={styles.imageCaption} class="image-caption">
                         <h3>Event Planner</h3>
