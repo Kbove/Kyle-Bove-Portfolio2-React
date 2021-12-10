@@ -1,4 +1,5 @@
 import React from 'react';
+import headshot from './images/headshot.jfif'
 
 const styles = {
   div: {
@@ -21,6 +22,14 @@ const styles = {
     padding: '15px',
     borderBottom: '3px solid black'
   },
+  img: {
+    textAlign: 'center',
+    display: 'block',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 'auto',
+    width: '300px',
+  }
 
 }
 
@@ -28,6 +37,7 @@ export default function About() {
   return (
     <div style={styles.div}>
       <h1 style={styles.h1} >About Me</h1>
+      <img src={headshot} style={styles.img}></img>
       <p style={styles.p}>
         Hi! My name's Kyle and this is my portfolio. A little bit about me: I graduated from Whitworth
         Univerity in 2017 with a Bachelor's in Marketing and went on to pursue my Master's in Business

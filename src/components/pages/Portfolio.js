@@ -50,10 +50,6 @@ thumbnail: {
 thumbnailImg: {
     width: '100%',
     height: '100%',
-    opacity: '0.6',
-        '& a:hover': {
-      opacity: 1,
-    }
 },
 
 imageCaption: {

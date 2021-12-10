@@ -1,0 +1,18 @@
+.react-pdf__Page__canvas { 
+    display: block; 
+    user-select: none; 
+    width: 612px; 
+    height: 792px;
+    margin: 0 auto;
+}
+
+/* .react-pdf__Page__textContent {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 612px; 
+    height: 792px; 
+    color: black; 
+    transform: translate(-50%, -50%) rotate(0deg); 
+    pointer-events: show;
+} */
