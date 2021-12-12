@@ -53,10 +53,6 @@ thumbnailImg: {
 },
 
 imageCaption: {
-    // display: 'none',
-    // '& hover': {
-    //     display: 'block',
-    // },
     position:'absolute',
     bottom: '3vw',
     backgroundColor: 'black',
@@ -66,7 +62,6 @@ imageCaption: {
     borderBottom:'3px solid black',
     color: 'red',
     fontSize: 'small',
-
 },
 
 link: {
