@@ -21,7 +21,7 @@ This is my professional portfolio. It utilizes HTML, CSS, and React.js
 * [Questions](#Question)
     
 ## Installation <a id="Installation"></a>
-The following necessary dependencies must be installed to run the application: Run it in your browser
+The following necessary dependencies must be installed to run the application: Click the heroku deploy link to view. Additionally, you can clone all of the files in this repository, navigate to the repository in your CMD prompt, and run it with NPM Start
     
 ## User Story <a id="Usage"></a>
 Everyone who wants a dev job and anyone who programs should have one
