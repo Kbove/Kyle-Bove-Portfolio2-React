@@ -2,7 +2,7 @@
 https://github.com/Kbove/Portfolio2.0
     
 ## Description
-This is my professional portfolio
+This is my professional portfolio. It utilizes HTML, CSS, and React.js
     
 ## Table of Contents
     
