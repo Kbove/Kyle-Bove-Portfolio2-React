@@ -1,6 +1,6 @@
 # Portfolio 2.0
-https://github.com/Kbove/Portfolio2.0
-    
+https://kyle-bove-portfolio.herokuapp.com/
+
 ## Description
 This is my professional portfolio. It utilizes HTML, CSS, and React.js
     
